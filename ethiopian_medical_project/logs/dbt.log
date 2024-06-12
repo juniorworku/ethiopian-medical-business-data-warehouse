@@ -2459,3 +2459,4 @@ The `source-paths` config has been renamed to `model-paths`. Please update your
 `dbt_project.yml` configuration to reflect this change.
 [0m15:25:10.661591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042832F0>]}
 [0m15:25:10.979986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042507A0>]}
+[0m15:25:11.126935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042A59D0>]}
