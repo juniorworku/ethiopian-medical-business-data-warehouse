@@ -2460,3 +2460,40 @@ The `source-paths` config has been renamed to `model-paths`. Please update your
 [0m15:25:10.661591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042832F0>]}
 [0m15:25:10.979986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042507A0>]}
 [0m15:25:11.126935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042A59D0>]}
+[0m15:44:09.431649 [error] [MainThread]: Encountered an error:
+
+[0m15:44:09.497650 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\env\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\env\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\env\Lib\site-packages\dbt\cli\requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\env\Lib\site-packages\dbt\cli\requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\env\Lib\site-packages\dbt\cli\requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\env\Lib\site-packages\dbt\cli\main.py", line 303, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\env\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\Ted\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ted\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ted\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m15:44:09.547300 [debug] [MainThread]: Command `dbt docs serve` failed at 15:44:09.546301 after 1139.39 seconds
+[0m15:44:09.552288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002410350E0C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024103D4F740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241043CA3C0>]}
+[0m15:44:09.558275 [debug] [MainThread]: Flushing usage events
