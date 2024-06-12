@@ -20,7 +20,6 @@ def clean_data(file_path):
 
     # Handle missing values
     data['message'] = data['message'].fillna('')
-    data['media_path'] = data['media_path'].fillna('')
 
     # Standardize formats
     data['message'] = data['message'].str.lower()
@@ -51,7 +50,7 @@ if __name__ == '__main__':
     DATABASE_URI = 'postgresql://postgres:new_password@localhost:5432/postgres'
 
     # Input and output directories
-    input_dir = './data/raw'
+    input_dir = '../scraping/data/raw'
     output_dir = './data/cleaned_transformed'
 
     # Create output directory if it doesn't exist
