@@ -1,0 +1,14 @@
+# dbt_project.yml
+name: 'ethiopian_medical_project'
+version: '1.0'
+config-version: 2
+
+profile: 'ethiopian_medical_profile'
+
+source-paths: ["models"]
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  ethiopian_medical_project:
+    +materialized: view

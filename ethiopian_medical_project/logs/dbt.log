@@ -1,0 +1,2461 @@
+[0m13:51:52.807645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D447D74E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D447D76210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D447D771A0>]}
+
+
+============================== 13:51:52.826272 | 07e9b6a9-bb62-4f58-ba8e-7ba8d7384a8e ==============================
+[0m13:51:52.826272 [info ] [MainThread]: Running with dbt=1.8.2
+[0m13:51:52.829309 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init ethiopian_medical_project', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:52.898045 [info ] [MainThread]: Setting up your profile.
+[0m13:53:59.995141 [info ] [MainThread]: Profile ethiopian_medical_profile written to C:\Users\Ted\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:53:59.998237 [debug] [MainThread]: Command `dbt init` succeeded at 13:53:59.998237 after 127.56 seconds
+[0m13:53:59.999045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D447E20CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D448687EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D447C8DF40>]}
+[0m13:54:00.002321 [debug] [MainThread]: Flushing usage events
+[0m13:54:53.354357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E295B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E4BC1190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E7DD2810>]}
+
+
+============================== 13:54:53.360341 | 122eeeef-d235-4ff9-b54e-03a08704ecb7 ==============================
+[0m13:54:53.360341 [info ] [MainThread]: Running with dbt=1.8.2
+[0m13:54:53.362337 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:54:53.507323 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:54:53.509099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E84EA720>]}
+[0m13:54:53.804308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E84EA600>]}
+[0m13:54:53.925861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E869F3B0>]}
+[0m13:54:53.928634 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m13:54:53.988454 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m13:54:53.991452 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:54:53.994396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E869F140>]}
+[0m13:54:57.550975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E99CDF70>]}
+[0m13:54:57.691593 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E61BC0B0>]}
+[0m13:54:57.692801 [info ] [MainThread]: Found 1 model, 413 macros
+[0m13:54:57.694586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E9B9A360>]}
+[0m13:54:57.698574 [info ] [MainThread]: 
+[0m13:54:57.700458 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:54:57.705444 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m13:55:03.001177 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m13:55:03.002809 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:55:03.003806 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:55:03.098017 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m13:55:03.100980 [debug] [ThreadPool]: On list_postgres: Close
+[0m13:55:03.102975 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now create_postgres_new_schema)
+[0m13:55:03.104970 [debug] [ThreadPool]: Creating schema "database: "postgres"
+schema: "new_schema"
+"
+[0m13:55:03.114038 [debug] [ThreadPool]: Using postgres connection "create_postgres_new_schema"
+[0m13:55:03.115035 [debug] [ThreadPool]: On create_postgres_new_schema: BEGIN
+[0m13:55:03.116047 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:55:03.179298 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m13:55:03.180242 [debug] [ThreadPool]: Using postgres connection "create_postgres_new_schema"
+[0m13:55:03.181241 [debug] [ThreadPool]: On create_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "create_postgres_new_schema"} */
+create schema if not exists "new_schema"
+[0m13:55:03.183236 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m13:55:03.185230 [debug] [ThreadPool]: On create_postgres_new_schema: COMMIT
+[0m13:55:03.185230 [debug] [ThreadPool]: Using postgres connection "create_postgres_new_schema"
+[0m13:55:03.186845 [debug] [ThreadPool]: On create_postgres_new_schema: COMMIT
+[0m13:55:03.191761 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m13:55:03.192632 [debug] [ThreadPool]: On create_postgres_new_schema: Close
+[0m13:55:03.195587 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m13:55:03.206111 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m13:55:03.207109 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m13:55:03.208342 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:55:03.268558 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m13:55:03.270554 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m13:55:03.271551 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m13:55:03.280915 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m13:55:03.282940 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m13:55:03.284596 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m13:55:03.293434 [debug] [MainThread]: Using postgres connection "master"
+[0m13:55:03.294402 [debug] [MainThread]: On master: BEGIN
+[0m13:55:03.294402 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:55:03.350484 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m13:55:03.351287 [debug] [MainThread]: Using postgres connection "master"
+[0m13:55:03.353252 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m13:55:03.364158 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m13:55:03.366157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E896ADB0>]}
+[0m13:55:03.367154 [debug] [MainThread]: On master: ROLLBACK
+[0m13:55:03.368330 [debug] [MainThread]: Using postgres connection "master"
+[0m13:55:03.369148 [debug] [MainThread]: On master: BEGIN
+[0m13:55:03.370145 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m13:55:03.371152 [debug] [MainThread]: On master: COMMIT
+[0m13:55:03.372440 [debug] [MainThread]: Using postgres connection "master"
+[0m13:55:03.373137 [debug] [MainThread]: On master: COMMIT
+[0m13:55:03.374557 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m13:55:03.376132 [debug] [MainThread]: On master: Close
+[0m13:55:03.377128 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:55:03.378124 [info ] [MainThread]: 
+[0m13:55:03.392011 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m13:55:03.393724 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m13:55:03.395004 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m13:55:03.396999 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m13:55:03.414824 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m13:55:03.419132 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m13:55:03.502911 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m13:55:03.505810 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m13:55:03.507530 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m13:55:03.508817 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:55:03.557797 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m13:55:03.558796 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m13:55:03.559361 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+with raw_chemed as (
+    select * from raw.chemed
+),
+raw_doctorset as (
+    select * from raw.doctorset
+),
+raw_eahci as (
+    select * from raw.eahci
+),
+raw_lobelia4cosmetics as (
+    select * from raw.lobelia4cosmetics
+),
+raw_yetenaweg as (
+    select * from raw.yetenaweg
+)
+
+select *
+from raw_chemed
+union all
+select *
+from raw_doctorset
+union all
+select *
+from raw_eahci
+union all
+select *
+from raw_lobelia4cosmetics
+union all
+select *
+from raw_yetenaweg
+  );
+[0m13:55:03.561793 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "raw.chemed" does not exist
+LINE 9:     select * from raw.chemed
+                          ^
+
+[0m13:55:03.562354 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m13:55:03.564334 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m13:55:03.618087 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  relation "raw.chemed" does not exist
+  LINE 9:     select * from raw.chemed
+                            ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m13:55:03.621107 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '122eeeef-d235-4ff9-b54e-03a08704ecb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E9E22600>]}
+[0m13:55:03.623075 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.22s]
+[0m13:55:03.626096 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m13:55:03.629418 [debug] [MainThread]: Using postgres connection "master"
+[0m13:55:03.630609 [debug] [MainThread]: On master: BEGIN
+[0m13:55:03.631430 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:55:03.693053 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m13:55:03.695139 [debug] [MainThread]: On master: COMMIT
+[0m13:55:03.696045 [debug] [MainThread]: Using postgres connection "master"
+[0m13:55:03.697309 [debug] [MainThread]: On master: COMMIT
+[0m13:55:03.698041 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m13:55:03.698821 [debug] [MainThread]: On master: Close
+[0m13:55:03.700642 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:55:03.701325 [debug] [MainThread]: Connection 'create_postgres_new_schema' was properly closed.
+[0m13:55:03.702322 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m13:55:03.703321 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m13:55:03.703321 [info ] [MainThread]: 
+[0m13:55:03.704534 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 6.00 seconds (6.00s).
+[0m13:55:03.707309 [debug] [MainThread]: Command end result
+[0m13:55:03.770478 [info ] [MainThread]: 
+[0m13:55:03.772475 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m13:55:03.773470 [info ] [MainThread]: 
+[0m13:55:03.776463 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  relation "raw.chemed" does not exist
+  LINE 9:     select * from raw.chemed
+                            ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m13:55:03.779263 [info ] [MainThread]: 
+[0m13:55:03.781221 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m13:55:03.783648 [debug] [MainThread]: Command `dbt run` failed at 13:55:03.783648 after 10.66 seconds
+[0m13:55:03.784647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E813E3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E9A0E570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000290E88B1430>]}
+[0m13:55:03.785641 [debug] [MainThread]: Flushing usage events
+[0m15:05:32.493030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A989AD67E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CBDFD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CBDF5C0>]}
+
+
+============================== 15:05:32.506992 | d425942e-2526-4250-951d-ac7988ca299c ==============================
+[0m15:05:32.506992 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:05:32.511039 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:05:32.737436 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:05:32.739466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CD23E00>]}
+[0m15:05:33.122527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CBDE6C0>]}
+[0m15:05:33.278272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98BFF2480>]}
+[0m15:05:33.282336 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:05:33.329915 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:05:33.740825 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:05:33.741835 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:05:33.776727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CD73F50>]}
+[0m15:05:34.016474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98DFF8050>]}
+[0m15:05:34.021300 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:05:34.023291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CE85E50>]}
+[0m15:05:34.029275 [info ] [MainThread]: 
+[0m15:05:34.031270 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:05:34.034908 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:05:34.512047 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:05:34.514126 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:05:34.517030 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:05:34.661965 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:05:34.664957 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:05:34.667950 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:05:34.677924 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:05:34.677924 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:05:34.679929 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:05:34.732011 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:05:34.732777 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:05:34.733779 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:05:34.745743 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:05:34.747736 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:05:34.748733 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:05:34.757710 [debug] [MainThread]: Using postgres connection "master"
+[0m15:05:34.758707 [debug] [MainThread]: On master: BEGIN
+[0m15:05:34.758894 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:05:34.808292 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:05:34.808964 [debug] [MainThread]: Using postgres connection "master"
+[0m15:05:34.809961 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:05:34.823924 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:05:34.825946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CE865D0>]}
+[0m15:05:34.826944 [debug] [MainThread]: On master: ROLLBACK
+[0m15:05:34.827913 [debug] [MainThread]: Using postgres connection "master"
+[0m15:05:34.827913 [debug] [MainThread]: On master: BEGIN
+[0m15:05:34.829143 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:05:34.830409 [debug] [MainThread]: On master: COMMIT
+[0m15:05:34.830933 [debug] [MainThread]: Using postgres connection "master"
+[0m15:05:34.831903 [debug] [MainThread]: On master: COMMIT
+[0m15:05:34.832900 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:05:34.832900 [debug] [MainThread]: On master: Close
+[0m15:05:34.833898 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:05:34.837886 [info ] [MainThread]: 
+[0m15:05:34.843926 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:05:34.844762 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:05:34.845760 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:05:34.847288 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:05:34.865706 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:05:34.867703 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:05:34.948486 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:05:34.951478 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:05:34.954472 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:05:34.956464 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:05:35.022463 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:05:35.023460 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:05:35.024457 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+with raw_chemed as (
+    select * from raw.chemed
+),
+raw_doctorset as (
+    select * from raw.doctorset
+),
+raw_eahci as (
+    select * from raw.eahci
+),
+raw_lobelia4cosmetics as (
+    select * from raw.lobelia4cosmetics
+),
+raw_yetenaweg as (
+    select * from raw.yetenaweg
+)
+
+select *
+from raw_chemed
+union all
+select *
+from raw_doctorset
+union all
+select *
+from raw_eahci
+union all
+select *
+from raw_lobelia4cosmetics
+union all
+select *
+from raw_yetenaweg
+  );
+[0m15:05:35.026897 [debug] [Thread-1 (]: Postgres adapter: Postgres error: each UNION query must have the same number of columns
+LINE 27: select *
+                ^
+
+[0m15:05:35.027481 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:05:35.029474 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:05:35.039991 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select *
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:05:35.042983 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd425942e-2526-4250-951d-ac7988ca299c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CE854F0>]}
+[0m15:05:35.044241 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.20s]
+[0m15:05:35.045974 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:05:35.049963 [debug] [MainThread]: Using postgres connection "master"
+[0m15:05:35.050960 [debug] [MainThread]: On master: BEGIN
+[0m15:05:35.051642 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:05:35.133216 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:05:35.135212 [debug] [MainThread]: On master: COMMIT
+[0m15:05:35.137207 [debug] [MainThread]: Using postgres connection "master"
+[0m15:05:35.138205 [debug] [MainThread]: On master: COMMIT
+[0m15:05:35.139203 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:05:35.140203 [debug] [MainThread]: On master: Close
+[0m15:05:35.142193 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:05:35.143332 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:05:35.145185 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:05:35.146847 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:05:35.148445 [info ] [MainThread]: 
+[0m15:05:35.150172 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.12 seconds (1.12s).
+[0m15:05:35.154161 [debug] [MainThread]: Command end result
+[0m15:05:35.280118 [info ] [MainThread]: 
+[0m15:05:35.284399 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:05:35.292384 [info ] [MainThread]: 
+[0m15:05:35.300816 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select *
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:05:35.313327 [info ] [MainThread]: 
+[0m15:05:35.329283 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:05:35.343246 [debug] [MainThread]: Command `dbt run` failed at 15:05:35.342247 after 3.14 seconds
+[0m15:05:35.349226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98C268D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CCF2FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A98CCF3CB0>]}
+[0m15:05:35.359201 [debug] [MainThread]: Flushing usage events
+[0m15:09:15.300665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022195F161B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221964DC410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221964DE7E0>]}
+
+
+============================== 15:09:15.312636 | 1dd6c8a2-24c4-4bec-b2af-93a36094f621 ==============================
+[0m15:09:15.312636 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:09:15.315581 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:09:15.602016 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:09:15.604796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022196BD28D0>]}
+[0m15:09:15.897330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221960D6E40>]}
+[0m15:09:16.018293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022195E773B0>]}
+[0m15:09:16.020285 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:09:16.046486 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:09:16.379149 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:09:16.380147 [debug] [MainThread]: Partial parsing: updated file: ethiopian_medical_project://models\cleaned_data.sql
+[0m15:09:16.822404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022196CB2150>]}
+[0m15:09:17.004895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022197F4F440>]}
+[0m15:09:17.006898 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:09:17.008905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022197F88860>]}
+[0m15:09:17.013020 [info ] [MainThread]: 
+[0m15:09:17.013873 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:09:17.015866 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:09:17.230185 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:09:17.231182 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:09:17.232178 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:09:17.296900 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:09:17.298867 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:09:17.301997 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:09:17.310868 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:09:17.311861 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:09:17.312841 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:09:17.366911 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:09:17.367568 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:09:17.369473 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:09:17.379444 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:09:17.382469 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:09:17.383550 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:09:17.394407 [debug] [MainThread]: Using postgres connection "master"
+[0m15:09:17.395402 [debug] [MainThread]: On master: BEGIN
+[0m15:09:17.396400 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:09:17.482874 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:09:17.484243 [debug] [MainThread]: Using postgres connection "master"
+[0m15:09:17.486000 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:09:17.509355 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:09:17.514303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022197F4F800>]}
+[0m15:09:17.515300 [debug] [MainThread]: On master: ROLLBACK
+[0m15:09:17.517474 [debug] [MainThread]: Using postgres connection "master"
+[0m15:09:17.519327 [debug] [MainThread]: On master: BEGIN
+[0m15:09:17.521372 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:09:17.523319 [debug] [MainThread]: On master: COMMIT
+[0m15:09:17.525270 [debug] [MainThread]: Using postgres connection "master"
+[0m15:09:17.526267 [debug] [MainThread]: On master: COMMIT
+[0m15:09:17.528263 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:09:17.529258 [debug] [MainThread]: On master: Close
+[0m15:09:17.531254 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:09:17.533593 [info ] [MainThread]: 
+[0m15:09:17.542760 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:09:17.544760 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:09:17.547007 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:09:17.547654 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:09:17.584599 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:09:17.591540 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:09:17.703236 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:09:17.705396 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:09:17.708243 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:09:17.709250 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:09:17.758668 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:09:17.759665 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:09:17.760662 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+with source_data as (
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.chemed
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.doctorset
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.eahci
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.lobelia4cosmetics
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.yetenaweg
+)
+
+select * from source_data
+  );
+[0m15:09:17.762480 [debug] [Thread-1 (]: Postgres adapter: Postgres error: column "media_path" does not exist
+LINE 24:         media_path
+                 ^
+DETAIL:  There is a column named "media_path" in table "*SELECT* 1", but it cannot be referenced from this part of the query.
+
+[0m15:09:17.762891 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:09:17.763862 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:09:17.771868 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  column "media_path" does not exist
+  LINE 24:         media_path
+                   ^
+  DETAIL:  There is a column named "media_path" in table "*SELECT* 1", but it cannot be referenced from this part of the query.
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:09:17.775855 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1dd6c8a2-24c4-4bec-b2af-93a36094f621', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221960D6930>]}
+[0m15:09:17.776854 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.23s]
+[0m15:09:17.778822 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:09:17.781814 [debug] [MainThread]: Using postgres connection "master"
+[0m15:09:17.781814 [debug] [MainThread]: On master: BEGIN
+[0m15:09:17.782811 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:09:17.844451 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:09:17.845117 [debug] [MainThread]: On master: COMMIT
+[0m15:09:17.846439 [debug] [MainThread]: Using postgres connection "master"
+[0m15:09:17.847668 [debug] [MainThread]: On master: COMMIT
+[0m15:09:17.848110 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:09:17.850104 [debug] [MainThread]: On master: Close
+[0m15:09:17.851101 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:09:17.852098 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:09:17.853096 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:09:17.854506 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:09:17.855090 [info ] [MainThread]: 
+[0m15:09:17.858097 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.84 seconds (0.84s).
+[0m15:09:17.861075 [debug] [MainThread]: Command end result
+[0m15:09:17.946479 [info ] [MainThread]: 
+[0m15:09:17.949331 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:09:17.950328 [info ] [MainThread]: 
+[0m15:09:17.952323 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  column "media_path" does not exist
+  LINE 24:         media_path
+                   ^
+  DETAIL:  There is a column named "media_path" in table "*SELECT* 1", but it cannot be referenced from this part of the query.
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:09:17.955337 [info ] [MainThread]: 
+[0m15:09:17.961299 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:09:17.966285 [debug] [MainThread]: Command `dbt run` failed at 15:09:17.964291 after 3.03 seconds
+[0m15:09:17.969279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221969DD3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022197E9B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022196711F70>]}
+[0m15:09:17.971272 [debug] [MainThread]: Flushing usage events
+[0m15:12:54.108878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C1AE9B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C2089BF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C20816720>]}
+
+
+============================== 15:12:54.114437 | efd9da59-40ee-44b1-91df-944382066784 ==============================
+[0m15:12:54.114437 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:12:54.116380 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:54.338503 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:12:54.341447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C20C45610>]}
+[0m15:12:54.618017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C20C5C4D0>]}
+[0m15:12:54.731173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C20C90410>]}
+[0m15:12:54.733166 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:12:54.756104 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:12:55.022533 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:12:55.024938 [debug] [MainThread]: Partial parsing: updated file: ethiopian_medical_project://models\cleaned_data.sql
+[0m15:12:55.507576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C21F10440>]}
+[0m15:12:55.706656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C2208FCE0>]}
+[0m15:12:55.709209 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:12:55.711205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C21FDA5D0>]}
+[0m15:12:55.716194 [info ] [MainThread]: 
+[0m15:12:55.718184 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:12:55.721317 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:12:55.854378 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:12:55.854378 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:12:55.855375 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:55.916214 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:12:55.918207 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:12:55.921200 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:12:55.932199 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:12:55.934164 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:12:55.934164 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:55.985225 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:55.986026 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:12:55.987114 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:12:55.996000 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:12:55.998022 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:12:55.999031 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:12:56.005973 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.006969 [debug] [MainThread]: On master: BEGIN
+[0m15:12:56.007651 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:12:56.059828 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.060826 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.061824 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:12:56.075787 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:12:56.078778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C20D931A0>]}
+[0m15:12:56.079775 [debug] [MainThread]: On master: ROLLBACK
+[0m15:12:56.080772 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.081770 [debug] [MainThread]: On master: BEGIN
+[0m15:12:56.082768 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.083765 [debug] [MainThread]: On master: COMMIT
+[0m15:12:56.084785 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.084785 [debug] [MainThread]: On master: COMMIT
+[0m15:12:56.086287 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.086756 [debug] [MainThread]: On master: Close
+[0m15:12:56.089021 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:12:56.089953 [info ] [MainThread]: 
+[0m15:12:56.095732 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:12:56.097728 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:12:56.098726 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:12:56.099723 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:12:56.120599 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:12:56.123589 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:12:56.184425 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:12:56.186421 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:12:56.188192 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:12:56.188417 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:12:56.250679 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.251677 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:12:56.253669 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+with source_data as (
+    select
+        message_id,
+        date,
+        sender_id,
+        message
+    from raw.chemed
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message
+    from raw.doctorset
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message
+    from raw.eahci
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message
+    from raw.lobelia4cosmetics
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message
+    from raw.yetenaweg
+)
+
+select * from source_data
+  );
+[0m15:12:56.256663 [debug] [Thread-1 (]: Postgres adapter: Postgres error: UNION types text and bigint cannot be matched
+LINE 19:         message_id,
+                 ^
+
+[0m15:12:56.258922 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:12:56.260695 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:12:56.272663 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  UNION types text and bigint cannot be matched
+  LINE 19:         message_id,
+                   ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:12:56.275657 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efd9da59-40ee-44b1-91df-944382066784', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C2243E510>]}
+[0m15:12:56.277767 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.17s]
+[0m15:12:56.279599 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:12:56.284587 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.285584 [debug] [MainThread]: On master: BEGIN
+[0m15:12:56.286919 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:12:56.395999 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.397032 [debug] [MainThread]: On master: COMMIT
+[0m15:12:56.398154 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.398979 [debug] [MainThread]: On master: COMMIT
+[0m15:12:56.400974 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.402433 [debug] [MainThread]: On master: Close
+[0m15:12:56.404060 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:56.405962 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:12:56.407956 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:12:56.408952 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:12:56.409951 [info ] [MainThread]: 
+[0m15:12:56.411946 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.69 seconds (0.69s).
+[0m15:12:56.414937 [debug] [MainThread]: Command end result
+[0m15:12:56.508012 [info ] [MainThread]: 
+[0m15:12:56.511014 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:12:56.513882 [info ] [MainThread]: 
+[0m15:12:56.517310 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  UNION types text and bigint cannot be matched
+  LINE 19:         message_id,
+                   ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:12:56.521298 [info ] [MainThread]: 
+[0m15:12:56.524290 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:12:56.528712 [debug] [MainThread]: Command `dbt run` failed at 15:12:56.528323 after 2.63 seconds
+[0m15:12:56.530297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C209FCCE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C20A35F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C2065F2C0>]}
+[0m15:12:56.532394 [debug] [MainThread]: Flushing usage events
+[0m15:14:24.086384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB513ED50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB799F3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB799F350>]}
+
+
+============================== 15:14:24.099308 | 8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4 ==============================
+[0m15:14:24.099308 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:14:24.105286 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:14:24.338217 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:14:24.339206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB7F13E00>]}
+[0m15:14:24.586304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB57DFDD0>]}
+[0m15:14:24.742523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB7A4F3B0>]}
+[0m15:14:24.745518 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:14:24.789399 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:14:25.198843 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:14:25.201835 [debug] [MainThread]: Partial parsing: updated file: ethiopian_medical_project://models\cleaned_data.sql
+[0m15:14:25.629704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB91F9BE0>]}
+[0m15:14:25.863590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB92AF2C0>]}
+[0m15:14:25.865755 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:14:25.869576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB91907A0>]}
+[0m15:14:25.876596 [info ] [MainThread]: 
+[0m15:14:25.881545 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:14:25.889521 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:14:26.188068 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:14:26.189300 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:14:26.190063 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:14:26.272683 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:14:26.274679 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:14:26.277670 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:14:26.290635 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:14:26.291634 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:14:26.292629 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:14:26.355941 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:14:26.355941 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:14:26.357475 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:14:26.365887 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:14:26.368880 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:14:26.370619 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:14:26.379881 [debug] [MainThread]: Using postgres connection "master"
+[0m15:14:26.379881 [debug] [MainThread]: On master: BEGIN
+[0m15:14:26.380877 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:14:26.436641 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:14:26.437593 [debug] [MainThread]: Using postgres connection "master"
+[0m15:14:26.439006 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:14:26.455575 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:14:26.458537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB8036E10>]}
+[0m15:14:26.459534 [debug] [MainThread]: On master: ROLLBACK
+[0m15:14:26.460937 [debug] [MainThread]: Using postgres connection "master"
+[0m15:14:26.461529 [debug] [MainThread]: On master: BEGIN
+[0m15:14:26.463553 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:14:26.464520 [debug] [MainThread]: On master: COMMIT
+[0m15:14:26.465518 [debug] [MainThread]: Using postgres connection "master"
+[0m15:14:26.466515 [debug] [MainThread]: On master: COMMIT
+[0m15:14:26.468522 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:14:26.469509 [debug] [MainThread]: On master: Close
+[0m15:14:26.470504 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:14:26.472500 [info ] [MainThread]: 
+[0m15:14:26.481476 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:14:26.483474 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:14:26.487459 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:14:26.489455 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:14:26.532665 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:14:26.540643 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:14:26.713179 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:14:26.720159 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:14:26.727140 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:14:26.734801 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:14:26.892975 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:14:26.895331 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:14:26.897964 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+
+with chemed as (
+    select * from raw.chemed
+),
+doctorset as (
+    select * from raw.doctorset
+),
+eahci as (
+    select * from raw.eahci
+),
+lobelia4cosmetics as (
+    select * from raw.lobelia4cosmetics
+),
+yetenaweg as (
+    select * from raw.yetenaweg
+)
+
+select * from chemed
+union all
+select * from doctorset
+union all
+select * from eahci
+union all
+select * from lobelia4cosmetics
+union all
+select * from yetenaweg
+  );
+[0m15:14:26.903944 [debug] [Thread-1 (]: Postgres adapter: Postgres error: each UNION query must have the same number of columns
+LINE 27: select * from doctorset
+                ^
+
+[0m15:14:26.906936 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:14:26.911131 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:14:26.939850 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select * from doctorset
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:14:26.945875 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c4fd8c3-c241-4b1a-b4bd-6bc4a22468b4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB96FE8A0>]}
+[0m15:14:26.949821 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.46s]
+[0m15:14:26.954846 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:14:26.962825 [debug] [MainThread]: Using postgres connection "master"
+[0m15:14:26.964826 [debug] [MainThread]: On master: BEGIN
+[0m15:14:26.968771 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:14:27.128211 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:14:27.129796 [debug] [MainThread]: On master: COMMIT
+[0m15:14:27.131041 [debug] [MainThread]: Using postgres connection "master"
+[0m15:14:27.132200 [debug] [MainThread]: On master: COMMIT
+[0m15:14:27.134196 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:14:27.135193 [debug] [MainThread]: On master: Close
+[0m15:14:27.136912 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:14:27.138188 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:14:27.139185 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:14:27.140179 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:14:27.141780 [info ] [MainThread]: 
+[0m15:14:27.143262 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.26 seconds (1.26s).
+[0m15:14:27.145502 [debug] [MainThread]: Command end result
+[0m15:14:27.215977 [info ] [MainThread]: 
+[0m15:14:27.220967 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:14:27.225954 [info ] [MainThread]: 
+[0m15:14:27.228945 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select * from doctorset
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:14:27.233049 [info ] [MainThread]: 
+[0m15:14:27.239726 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:14:27.246573 [debug] [MainThread]: Command `dbt run` failed at 15:14:27.245575 after 3.53 seconds
+[0m15:14:27.248566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB7D9FD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB90D5C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DCB800F740>]}
+[0m15:14:27.252622 [debug] [MainThread]: Flushing usage events
+[0m15:16:28.990586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289B8E7020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289B8E64B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289B8E7C80>]}
+
+
+============================== 15:16:28.999959 | db5a3879-26b0-4ac3-9fb5-c70f8647eca4 ==============================
+[0m15:16:28.999959 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:16:29.001954 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m15:16:29.212559 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:16:29.214221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289BA437A0>]}
+[0m15:16:29.525818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289B9F7F80>]}
+[0m15:16:29.690985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289AF89D60>]}
+[0m15:16:29.694155 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:16:29.719691 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:16:29.954700 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:16:29.955666 [debug] [MainThread]: Partial parsing: updated file: ethiopian_medical_project://models\cleaned_data.sql
+[0m15:16:30.323727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289CE3FFB0>]}
+[0m15:16:30.458446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289CE0B890>]}
+[0m15:16:30.459441 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:16:30.461436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289CD499D0>]}
+[0m15:16:30.464429 [info ] [MainThread]: 
+[0m15:16:30.465021 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:16:30.467897 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:16:30.670341 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:16:30.671342 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:16:30.672818 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:16:30.742917 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:16:30.744913 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:16:30.747903 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:16:30.757905 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:16:30.758873 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:16:30.759870 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:16:30.810735 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:16:30.811734 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:16:30.812731 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:16:30.822705 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:16:30.824697 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:16:30.826175 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:16:30.831708 [debug] [MainThread]: Using postgres connection "master"
+[0m15:16:30.832704 [debug] [MainThread]: On master: BEGIN
+[0m15:16:30.833674 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:16:30.880653 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:16:30.880653 [debug] [MainThread]: Using postgres connection "master"
+[0m15:16:30.881903 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:16:30.893628 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:16:30.895612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289D099250>]}
+[0m15:16:30.896609 [debug] [MainThread]: On master: ROLLBACK
+[0m15:16:30.897606 [debug] [MainThread]: Using postgres connection "master"
+[0m15:16:30.897606 [debug] [MainThread]: On master: BEGIN
+[0m15:16:30.898604 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:16:30.899603 [debug] [MainThread]: On master: COMMIT
+[0m15:16:30.900598 [debug] [MainThread]: Using postgres connection "master"
+[0m15:16:30.900598 [debug] [MainThread]: On master: COMMIT
+[0m15:16:30.901596 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:16:30.902596 [debug] [MainThread]: On master: Close
+[0m15:16:30.903593 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:16:30.904588 [info ] [MainThread]: 
+[0m15:16:30.910600 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:16:30.910600 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:16:30.912568 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:16:30.912568 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:16:30.923539 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:16:30.926085 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:16:31.060172 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:16:31.063164 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:16:31.065159 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:16:31.066156 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:16:31.119064 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:16:31.121012 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:16:31.122010 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    with chemed as (
+    select message_id, date, sender_id, message
+    from raw.chemed
+),
+doctorset as (
+    select message_id, date, sender_id, message
+    from raw.doctorset
+),
+eahci as (
+    select message_id, date, sender_id, message
+    from raw.eahci
+),
+lobelia4cosmetics as (
+    select message_id, date, sender_id, message
+    from raw.lobelia4cosmetics
+),
+yetenaweg as (
+    select message_id, date, sender_id, message
+    from raw.yetenaweg
+)
+select * from chemed
+union all
+select * from doctorset
+union all
+select * from eahci
+union all
+select * from lobelia4cosmetics
+union all
+select * from yetenaweg;
+  );
+[0m15:16:31.123004 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near ";"
+LINE 35: select * from yetenaweg;
+                                ^
+
+[0m15:16:31.124194 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:16:31.125996 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:16:31.140069 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  syntax error at or near ";"
+  LINE 35: select * from yetenaweg;
+                                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:16:31.144059 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db5a3879-26b0-4ac3-9fb5-c70f8647eca4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289CE3FC20>]}
+[0m15:16:31.145059 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.23s]
+[0m15:16:31.147289 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:16:31.150042 [debug] [MainThread]: Using postgres connection "master"
+[0m15:16:31.151040 [debug] [MainThread]: On master: BEGIN
+[0m15:16:31.151360 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:16:31.207576 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:16:31.208247 [debug] [MainThread]: On master: COMMIT
+[0m15:16:31.209307 [debug] [MainThread]: Using postgres connection "master"
+[0m15:16:31.210213 [debug] [MainThread]: On master: COMMIT
+[0m15:16:31.211336 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:16:31.212208 [debug] [MainThread]: On master: Close
+[0m15:16:31.213206 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:16:31.214251 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:16:31.214251 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:16:31.215201 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:16:31.216198 [info ] [MainThread]: 
+[0m15:16:31.218235 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.75 seconds (0.75s).
+[0m15:16:31.220876 [debug] [MainThread]: Command end result
+[0m15:16:31.268035 [info ] [MainThread]: 
+[0m15:16:31.270126 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:16:31.272024 [info ] [MainThread]: 
+[0m15:16:31.274019 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  syntax error at or near ";"
+  LINE 35: select * from yetenaweg;
+                                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:16:31.276162 [info ] [MainThread]: 
+[0m15:16:31.279006 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:16:31.282058 [debug] [MainThread]: Command `dbt run` failed at 15:16:31.282058 after 2.51 seconds
+[0m15:16:31.286057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289B8CEAE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289B4B05C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002289CCF0980>]}
+[0m15:16:31.287129 [debug] [MainThread]: Flushing usage events
+[0m15:18:40.815164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B2DEFA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203AF5168D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B2F661B0>]}
+
+
+============================== 15:18:40.829519 | aff1b375-c6e8-4c18-9334-ff2ad2c2cd39 ==============================
+[0m15:18:40.829519 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:18:40.833449 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:18:41.193963 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:18:41.202753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B33524B0>]}
+[0m15:18:41.636597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B3160740>]}
+[0m15:18:41.725361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B215D640>]}
+[0m15:18:41.727384 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:18:41.751631 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:18:42.253975 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:18:42.256046 [debug] [MainThread]: Partial parsing: updated file: ethiopian_medical_project://models\cleaned_data.sql
+[0m15:18:42.638993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B45C2DB0>]}
+[0m15:18:42.777028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B46CF3B0>]}
+[0m15:18:42.779046 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:18:42.780016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B33A25A0>]}
+[0m15:18:42.783009 [info ] [MainThread]: 
+[0m15:18:42.785018 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:18:42.786600 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:18:43.014014 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:18:43.016010 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:18:43.020002 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:18:43.258361 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:18:43.264345 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:18:43.269330 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:18:43.287290 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:18:43.288279 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:18:43.289281 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:18:43.345342 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:18:43.346184 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:18:43.347182 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:18:43.357155 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:18:43.360147 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:18:43.361314 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:18:43.369125 [debug] [MainThread]: Using postgres connection "master"
+[0m15:18:43.370181 [debug] [MainThread]: On master: BEGIN
+[0m15:18:43.371118 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:18:43.430961 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:18:43.432955 [debug] [MainThread]: Using postgres connection "master"
+[0m15:18:43.435219 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:18:43.462876 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:18:43.468621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B34845C0>]}
+[0m15:18:43.470210 [debug] [MainThread]: On master: ROLLBACK
+[0m15:18:43.471433 [debug] [MainThread]: Using postgres connection "master"
+[0m15:18:43.473159 [debug] [MainThread]: On master: BEGIN
+[0m15:18:43.475155 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:18:43.476150 [debug] [MainThread]: On master: COMMIT
+[0m15:18:43.477500 [debug] [MainThread]: Using postgres connection "master"
+[0m15:18:43.479171 [debug] [MainThread]: On master: COMMIT
+[0m15:18:43.480176 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:18:43.482137 [debug] [MainThread]: On master: Close
+[0m15:18:43.484129 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:18:43.487219 [info ] [MainThread]: 
+[0m15:18:43.498096 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:18:43.499093 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:18:43.504256 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:18:43.506114 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:18:43.546960 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:18:43.549953 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:18:43.713814 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:18:43.719756 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:18:43.723744 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:18:43.725746 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:18:43.872824 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:18:43.874819 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:18:43.876833 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+
+with chemed as (
+    select * from raw.chemed
+),
+doctorset as (
+    select * from raw.doctorset
+),
+eahci as (
+    select * from raw.eahci
+),
+lobelia4cosmetics as (
+    select * from raw.lobelia4cosmetics
+),
+yetenaweg as (
+    select * from raw.yetenaweg
+)
+
+select * from chemed
+union all
+select * from doctorset
+union all
+select * from eahci
+union all
+select * from lobelia4cosmetics
+union all
+select * from yetenaweg
+  );
+[0m15:18:43.881052 [debug] [Thread-1 (]: Postgres adapter: Postgres error: each UNION query must have the same number of columns
+LINE 27: select * from doctorset
+                ^
+
+[0m15:18:43.883755 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:18:43.887745 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:18:43.910212 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select * from doctorset
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:18:43.915199 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aff1b375-c6e8-4c18-9334-ff2ad2c2cd39', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B4B22F00>]}
+[0m15:18:43.920226 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.41s]
+[0m15:18:43.925179 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:18:43.931068 [debug] [MainThread]: Using postgres connection "master"
+[0m15:18:43.933073 [debug] [MainThread]: On master: BEGIN
+[0m15:18:43.939041 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:18:44.085299 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:18:44.086572 [debug] [MainThread]: On master: COMMIT
+[0m15:18:44.088527 [debug] [MainThread]: Using postgres connection "master"
+[0m15:18:44.090525 [debug] [MainThread]: On master: COMMIT
+[0m15:18:44.092973 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:18:44.094517 [debug] [MainThread]: On master: Close
+[0m15:18:44.096507 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:18:44.099502 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:18:44.102705 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:18:44.105632 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:18:44.107480 [info ] [MainThread]: 
+[0m15:18:44.110470 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.32 seconds (1.32s).
+[0m15:18:44.114459 [debug] [MainThread]: Command end result
+[0m15:18:44.276379 [info ] [MainThread]: 
+[0m15:18:44.280016 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:18:44.282011 [info ] [MainThread]: 
+[0m15:18:44.289031 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select * from doctorset
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:18:44.295974 [info ] [MainThread]: 
+[0m15:18:44.299963 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:18:44.315321 [debug] [MainThread]: Command `dbt run` failed at 15:18:44.313928 after 3.78 seconds
+[0m15:18:44.322059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B2C5E9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203AF5168D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000203B2EB87A0>]}
+[0m15:18:44.327889 [debug] [MainThread]: Flushing usage events
+[0m15:19:41.691725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F1906810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F260D5E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F52061B0>]}
+
+
+============================== 15:19:41.703000 | e386047a-d17a-4d42-8796-046f482bcf63 ==============================
+[0m15:19:41.703000 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:19:41.705952 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:19:42.001918 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:19:42.003479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F47F1010>]}
+[0m15:19:42.231526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F56A0350>]}
+[0m15:19:42.391102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F4516180>]}
+[0m15:19:42.395086 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:19:42.433548 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:19:42.743846 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:19:42.745841 [debug] [MainThread]: Partial parsing: updated file: ethiopian_medical_project://models\cleaned_data.sql
+[0m15:19:43.299224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F57A0D40>]}
+[0m15:19:43.431330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F6A3F6E0>]}
+[0m15:19:43.432329 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:19:43.434325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F6989DF0>]}
+[0m15:19:43.437649 [info ] [MainThread]: 
+[0m15:19:43.440018 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:19:43.443697 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:19:43.707040 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:19:43.709035 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:19:43.711119 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:19:43.807864 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:19:43.811853 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:19:43.813848 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:19:43.827168 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:19:43.827810 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:19:43.829045 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:19:43.894637 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:19:43.894637 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:19:43.896242 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:19:43.905029 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:19:43.907991 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:19:43.908988 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:19:43.915932 [debug] [MainThread]: Using postgres connection "master"
+[0m15:19:43.916818 [debug] [MainThread]: On master: BEGIN
+[0m15:19:43.917818 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:19:43.972953 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:19:43.973879 [debug] [MainThread]: Using postgres connection "master"
+[0m15:19:43.974874 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:19:43.988449 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:19:43.990414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F6A57800>]}
+[0m15:19:43.991412 [debug] [MainThread]: On master: ROLLBACK
+[0m15:19:43.992504 [debug] [MainThread]: Using postgres connection "master"
+[0m15:19:43.994405 [debug] [MainThread]: On master: BEGIN
+[0m15:19:43.995401 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:19:43.996399 [debug] [MainThread]: On master: COMMIT
+[0m15:19:43.997397 [debug] [MainThread]: Using postgres connection "master"
+[0m15:19:43.997397 [debug] [MainThread]: On master: COMMIT
+[0m15:19:43.998394 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:19:43.999393 [debug] [MainThread]: On master: Close
+[0m15:19:44.000389 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:19:44.002471 [info ] [MainThread]: 
+[0m15:19:44.007911 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:19:44.008455 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:19:44.013495 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:19:44.015410 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:19:44.055308 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:19:44.066274 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:19:44.227516 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:19:44.231506 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:19:44.233501 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:19:44.236491 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:19:44.494105 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:19:44.495839 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:19:44.498791 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+with source_data as (
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.chemed
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.doctorset
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.eahci
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.lobelia4cosmetics
+
+    union
+
+    select
+        message_id,
+        date,
+        sender_id,
+        message,
+        media_path
+    from raw.yetenaweg
+)
+
+select * from source_data
+  );
+[0m15:19:44.502781 [debug] [Thread-1 (]: Postgres adapter: Postgres error: column "media_path" does not exist
+LINE 24:         media_path
+                 ^
+DETAIL:  There is a column named "media_path" in table "*SELECT* 1", but it cannot be referenced from this part of the query.
+
+[0m15:19:44.504853 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:19:44.507822 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:19:44.532743 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  column "media_path" does not exist
+  LINE 24:         media_path
+                   ^
+  DETAIL:  There is a column named "media_path" in table "*SELECT* 1", but it cannot be referenced from this part of the query.
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:19:44.537721 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e386047a-d17a-4d42-8796-046f482bcf63', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F4C468A0>]}
+[0m15:19:44.540715 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.52s]
+[0m15:19:44.547702 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:19:44.555679 [debug] [MainThread]: Using postgres connection "master"
+[0m15:19:44.557917 [debug] [MainThread]: On master: BEGIN
+[0m15:19:44.563619 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:19:44.731269 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:19:44.734056 [debug] [MainThread]: On master: COMMIT
+[0m15:19:44.737112 [debug] [MainThread]: Using postgres connection "master"
+[0m15:19:44.739086 [debug] [MainThread]: On master: COMMIT
+[0m15:19:44.742063 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:19:44.746186 [debug] [MainThread]: On master: Close
+[0m15:19:44.749431 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:19:44.752004 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:19:44.753997 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:19:44.755992 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:19:44.757987 [info ] [MainThread]: 
+[0m15:19:44.762977 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.32 seconds (1.32s).
+[0m15:19:44.767966 [debug] [MainThread]: Command end result
+[0m15:19:44.962894 [info ] [MainThread]: 
+[0m15:19:44.965886 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:19:44.969878 [info ] [MainThread]: 
+[0m15:19:44.974862 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  column "media_path" does not exist
+  LINE 24:         media_path
+                   ^
+  DETAIL:  There is a column named "media_path" in table "*SELECT* 1", but it cannot be referenced from this part of the query.
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:19:44.983840 [info ] [MainThread]: 
+[0m15:19:44.989821 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:19:45.008853 [debug] [MainThread]: Command `dbt run` failed at 15:19:45.007377 after 3.61 seconds
+[0m15:19:45.018747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F4B3EB40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F57A9B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291F510F260>]}
+[0m15:19:45.035699 [debug] [MainThread]: Flushing usage events
+[0m15:20:10.560512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C425B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C3E95190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C9715D00>]}
+
+
+============================== 15:20:10.573968 | 470ce464-cf3e-497d-94b5-ebcb0a5e3f67 ==============================
+[0m15:20:10.573968 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:20:10.578460 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:20:10.952065 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:20:10.960062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CA0F28A0>]}
+[0m15:20:11.524653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CA0A7590>]}
+[0m15:20:11.698360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CA0C0410>]}
+[0m15:20:11.700951 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:20:11.746718 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:20:12.077978 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:20:12.080449 [debug] [MainThread]: Partial parsing: updated file: ethiopian_medical_project://models\cleaned_data.sql
+[0m15:20:12.833763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CB2F0170>]}
+[0m15:20:13.153969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CB46F740>]}
+[0m15:20:13.157957 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:20:13.161948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CB48E150>]}
+[0m15:20:13.168933 [info ] [MainThread]: 
+[0m15:20:13.174913 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:20:13.179903 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:20:13.387482 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:20:13.390481 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:20:13.392465 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:20:13.500116 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m15:20:13.507097 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:20:13.512083 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:20:13.537066 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:20:13.540009 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:20:13.542004 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:20:13.647932 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:20:13.648718 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:20:13.651712 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:20:13.675551 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:20:13.682531 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:20:13.685919 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:20:13.699531 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:13.700530 [debug] [MainThread]: On master: BEGIN
+[0m15:20:13.702478 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:20:13.807390 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:20:13.808387 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:13.810383 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:20:13.835559 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:20:13.843539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233CB70CDA0>]}
+[0m15:20:13.846530 [debug] [MainThread]: On master: ROLLBACK
+[0m15:20:13.848525 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:13.849800 [debug] [MainThread]: On master: BEGIN
+[0m15:20:13.852400 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:20:13.853556 [debug] [MainThread]: On master: COMMIT
+[0m15:20:13.854600 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:13.857502 [debug] [MainThread]: On master: COMMIT
+[0m15:20:13.859850 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:20:13.861491 [debug] [MainThread]: On master: Close
+[0m15:20:13.863745 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:20:13.866110 [info ] [MainThread]: 
+[0m15:20:13.877706 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:20:13.879745 [info ] [Thread-1 (]: 1 of 1 START sql view model new_schema.cleaned_data ............................ [RUN]
+[0m15:20:13.883875 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:20:13.885374 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:20:13.930254 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:20:13.934242 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:20:14.102464 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:20:14.107409 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:20:14.109403 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: BEGIN
+[0m15:20:14.112396 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:20:14.240672 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m15:20:14.241708 [debug] [Thread-1 (]: Using postgres connection "model.ethiopian_medical_project.cleaned_data"
+[0m15:20:14.243664 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "node_id": "model.ethiopian_medical_project.cleaned_data"} */
+
+  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+    
+    
+  as (
+    -- models/cleaned_data.sql
+
+with chemed as (
+    select * from raw.chemed
+),
+doctorset as (
+    select * from raw.doctorset
+),
+eahci as (
+    select * from raw.eahci
+),
+lobelia4cosmetics as (
+    select * from raw.lobelia4cosmetics
+),
+yetenaweg as (
+    select * from raw.yetenaweg
+)
+
+select * from chemed
+union all
+select * from doctorset
+union all
+select * from eahci
+union all
+select * from lobelia4cosmetics
+union all
+select * from yetenaweg
+  );
+[0m15:20:14.248173 [debug] [Thread-1 (]: Postgres adapter: Postgres error: each UNION query must have the same number of columns
+LINE 27: select * from doctorset
+                ^
+
+[0m15:20:14.249771 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: ROLLBACK
+[0m15:20:14.252678 [debug] [Thread-1 (]: On model.ethiopian_medical_project.cleaned_data: Close
+[0m15:20:14.274581 [debug] [Thread-1 (]: Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select * from doctorset
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:20:14.280149 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '470ce464-cf3e-497d-94b5-ebcb0a5e3f67', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C9666660>]}
+[0m15:20:14.284073 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model new_schema.cleaned_data ................... [[31mERROR[0m in 0.39s]
+[0m15:20:14.287103 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:20:14.295046 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:14.297039 [debug] [MainThread]: On master: BEGIN
+[0m15:20:14.299309 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:20:14.429442 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:20:14.430404 [debug] [MainThread]: On master: COMMIT
+[0m15:20:14.432398 [debug] [MainThread]: Using postgres connection "master"
+[0m15:20:14.433397 [debug] [MainThread]: On master: COMMIT
+[0m15:20:14.435392 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:20:14.436436 [debug] [MainThread]: On master: Close
+[0m15:20:14.438383 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:20:14.440378 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:20:14.441833 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:20:14.442372 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:20:14.444021 [info ] [MainThread]: 
+[0m15:20:14.445363 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.27 seconds (1.27s).
+[0m15:20:14.448355 [debug] [MainThread]: Command end result
+[0m15:20:14.537574 [info ] [MainThread]: 
+[0m15:20:14.542117 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:20:14.544205 [info ] [MainThread]: 
+[0m15:20:14.546095 [error] [MainThread]:   Database Error in model cleaned_data (models\cleaned_data.sql)
+  each UNION query must have the same number of columns
+  LINE 27: select * from doctorset
+                  ^
+  compiled Code at target\run\ethiopian_medical_project\models\cleaned_data.sql
+[0m15:20:14.549087 [info ] [MainThread]: 
+[0m15:20:14.550083 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m15:20:14.553682 [debug] [MainThread]: Command `dbt run` failed at 15:20:14.553682 after 4.23 seconds
+[0m15:20:14.557582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C425B1A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C9F4FE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233C8F36A20>]}
+[0m15:20:14.559063 [debug] [MainThread]: Flushing usage events
+[0m15:21:48.859178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E15AE480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E134A870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E15AC230>]}
+
+
+============================== 15:21:48.870042 | f10614c6-ab33-40dd-864c-5588402ae39b ==============================
+[0m15:21:48.870042 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:21:48.872258 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m15:21:49.184567 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:21:49.187759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f10614c6-ab33-40dd-864c-5588402ae39b', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E12F60F0>]}
+[0m15:21:49.550464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f10614c6-ab33-40dd-864c-5588402ae39b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E1386780>]}
+[0m15:21:49.712584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f10614c6-ab33-40dd-864c-5588402ae39b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E1349640>]}
+[0m15:21:49.717205 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:21:49.744995 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:21:50.125779 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:21:50.128771 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:21:50.205614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f10614c6-ab33-40dd-864c-5588402ae39b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E19AE8A0>]}
+[0m15:21:50.533112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f10614c6-ab33-40dd-864c-5588402ae39b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E2D28CB0>]}
+[0m15:21:50.535812 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:21:50.539803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f10614c6-ab33-40dd-864c-5588402ae39b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E130F0E0>]}
+[0m15:21:50.550818 [info ] [MainThread]: 
+[0m15:21:50.555758 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m15:21:50.566734 [debug] [MainThread]: Command end result
+[0m15:21:50.660723 [debug] [MainThread]: Command `dbt test` succeeded at 15:21:50.659210 after 2.19 seconds
+[0m15:21:50.662759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258DB675340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E19D6BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258E15ED7F0>]}
+[0m15:21:50.663804 [debug] [MainThread]: Flushing usage events
+[0m15:24:54.288499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1A981B290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AD2861B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AD2FA5A0>]}
+
+
+============================== 15:24:54.295445 | 1869a44c-c84b-4403-b457-f1433a5adc26 ==============================
+[0m15:24:54.295445 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:24:54.296911 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:24:54.462413 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:24:54.463378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1869a44c-c84b-4403-b457-f1433a5adc26', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AD2D9EE0>]}
+[0m15:24:54.741267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1869a44c-c84b-4403-b457-f1433a5adc26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1ACF4E4B0>]}
+[0m15:24:54.875918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1869a44c-c84b-4403-b457-f1433a5adc26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AAE9FB60>]}
+[0m15:24:54.880947 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:24:54.916805 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:24:55.197691 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:24:55.199259 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:24:55.278964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1869a44c-c84b-4403-b457-f1433a5adc26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AD6C9D60>]}
+[0m15:24:55.341946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1869a44c-c84b-4403-b457-f1433a5adc26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AE87F5F0>]}
+[0m15:24:55.342579 [info ] [MainThread]: Found 1 model, 413 macros
+[0m15:24:55.345573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1869a44c-c84b-4403-b457-f1433a5adc26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AD75F740>]}
+[0m15:24:55.349589 [info ] [MainThread]: 
+[0m15:24:55.351556 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:24:55.357539 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_new_schema'
+[0m15:24:55.539175 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:24:55.540150 [debug] [ThreadPool]: On list_postgres_new_schema: BEGIN
+[0m15:24:55.540640 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:24:55.604948 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:24:55.605948 [debug] [ThreadPool]: Using postgres connection "list_postgres_new_schema"
+[0m15:24:55.606945 [debug] [ThreadPool]: On list_postgres_new_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "list_postgres_new_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'new_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'new_schema'
+  
+[0m15:24:55.616913 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:24:55.619989 [debug] [ThreadPool]: On list_postgres_new_schema: ROLLBACK
+[0m15:24:55.621282 [debug] [ThreadPool]: On list_postgres_new_schema: Close
+[0m15:24:55.628874 [debug] [MainThread]: Using postgres connection "master"
+[0m15:24:55.630211 [debug] [MainThread]: On master: BEGIN
+[0m15:24:55.630876 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:24:55.688284 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:24:55.689099 [debug] [MainThread]: Using postgres connection "master"
+[0m15:24:55.690237 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:24:55.706028 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:24:55.708022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1869a44c-c84b-4403-b457-f1433a5adc26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AD05F8C0>]}
+[0m15:24:55.709019 [debug] [MainThread]: On master: ROLLBACK
+[0m15:24:55.711019 [debug] [MainThread]: On master: Close
+[0m15:24:55.712009 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:24:55.713006 [info ] [MainThread]: 
+[0m15:24:55.720561 [debug] [Thread-1 (]: Began running node model.ethiopian_medical_project.cleaned_data
+[0m15:24:55.721987 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopian_medical_project.cleaned_data'
+[0m15:24:55.723977 [debug] [Thread-1 (]: Began compiling node model.ethiopian_medical_project.cleaned_data
+[0m15:24:55.741935 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopian_medical_project.cleaned_data"
+[0m15:24:55.743925 [debug] [Thread-1 (]: Began executing node model.ethiopian_medical_project.cleaned_data
+[0m15:24:55.745299 [debug] [Thread-1 (]: Finished running node model.ethiopian_medical_project.cleaned_data
+[0m15:24:55.747967 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:24:55.748911 [debug] [MainThread]: Connection 'list_postgres_new_schema' was properly closed.
+[0m15:24:55.750322 [debug] [MainThread]: Connection 'model.ethiopian_medical_project.cleaned_data' was properly closed.
+[0m15:24:55.753897 [debug] [MainThread]: Command end result
+[0m15:24:56.377764 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m15:24:56.382750 [info ] [MainThread]: Building catalog
+[0m15:24:56.431650 [debug] [ThreadPool]: Acquiring new postgres connection 'postgres.information_schema'
+[0m15:24:56.459548 [debug] [ThreadPool]: Using postgres connection "postgres.information_schema"
+[0m15:24:56.460544 [debug] [ThreadPool]: On postgres.information_schema: BEGIN
+[0m15:24:56.461945 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:24:56.593735 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:24:56.595585 [debug] [ThreadPool]: Using postgres connection "postgres.information_schema"
+[0m15:24:56.598533 [debug] [ThreadPool]: On postgres.information_schema: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "ethiopian_medical_profile", "target_name": "dev", "connection_name": "postgres.information_schema"} */
+
+    
+    
+
+    select
+        'postgres' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('new_schema') and
+           upper(tbl.relname) = upper('cleaned_data')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m15:24:56.630757 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:24:56.639731 [debug] [ThreadPool]: On postgres.information_schema: ROLLBACK
+[0m15:24:56.642690 [debug] [ThreadPool]: On postgres.information_schema: Close
+[0m15:24:56.746990 [info ] [MainThread]: Catalog written to C:\Users\Ted\Desktop\Juju\DEV\ethiopian-medical-business-data-warehouse\ethiopian_medical_project\target\catalog.json
+[0m15:24:56.758377 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:24:56.758377 after 2.78 seconds
+[0m15:24:56.760377 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:24:56.762372 [debug] [MainThread]: Connection 'postgres.information_schema' was properly closed.
+[0m15:24:56.764365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AD1B2720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AC721520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B1AC447C20>]}
+[0m15:24:56.766361 [debug] [MainThread]: Flushing usage events
+[0m15:25:10.416473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241037B62D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241037B6990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241037B63F0>]}
+
+
+============================== 15:25:10.427948 | 53962436-0419-4e74-94f5-2f0f82ac4e1a ==============================
+[0m15:25:10.427948 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:25:10.431271 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Ted\\Desktop\\Juju\\DEV\\ethiopian-medical-business-data-warehouse\\ethiopian_medical_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Ted\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt docs serve', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:25:10.658637 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:25:10.661591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042832F0>]}
+[0m15:25:10.979986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53962436-0419-4e74-94f5-2f0f82ac4e1a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241042507A0>]}
