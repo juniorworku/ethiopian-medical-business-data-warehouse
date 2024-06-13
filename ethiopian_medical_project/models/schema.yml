@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: cleaned_data
+    columns:
+      - name: message_id
+        tests:
+          - not_null
+          - unique
+      - name: date
+        tests:
+          - not_null
+      - name: sender_id
+        tests:
+          - not_null
+      - name: message
+        tests:
+          - not_null

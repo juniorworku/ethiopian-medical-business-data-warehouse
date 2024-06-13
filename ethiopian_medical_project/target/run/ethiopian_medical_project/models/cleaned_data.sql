@@ -1,24 +1,54 @@
 
-  create view "postgres"."new_schema"."cleaned_data__dbt_tmp"
+  create view "postgres"."public"."cleaned_data__dbt_tmp"
     
     
   as (
     -- models/cleaned_data.sql
 
 with chemed as (
-    select * from raw.chemed
+    select 
+        message_id::text,
+        date,
+        sender_id::text,
+        message,
+        media_path
+    from raw.chemed
 ),
 doctorset as (
-    select * from raw.doctorset
+    select 
+        message_id::text,
+        date,
+        sender_id::text,
+        message,
+        NULL as media_path
+    from raw.doctorset
 ),
 eahci as (
-    select * from raw.eahci
+    select 
+        message_id::text,
+        date,
+        sender_id::text,
+        message,
+        NULL as media_path
+    from raw.eahci
 ),
 lobelia4cosmetics as (
-    select * from raw.lobelia4cosmetics
+    select 
+        message_id::text,
+        date,
+        sender_id::text,
+        message,
+        media_path
+    from raw.lobelia4cosmetics
 ),
 yetenaweg as (
-    select * from raw.yetenaweg
+    select 
+        message_id::text,
+        date,
+        sender_id::text,
+        message,
+        NULL as media_path
+    from raw.yetenaweg
 )
 
 select * from chemed
