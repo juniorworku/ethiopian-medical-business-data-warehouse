@@ -5,10 +5,12 @@ config-version: 2
 
 profile: 'ethiopian_medical_profile'
 
-source-paths: ["models"]
-target-path: "target"
-clean-targets: ["target"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+data-paths: ["data"]
+test-paths: ["tests"]
 
 models:
   ethiopian_medical_project:
-    +materialized: view
+    cleaned_data:
+      materialized: view
