@@ -1,69 +1,70 @@
+# scraping/telegram_scraper.py
+
 import os
 import logging
 import yaml
-from telethon.sync import TelegramClient
-from telethon.tl.types import InputMessagesFilterPhotos
+from telethon import TelegramClient
+from telethon.errors import SessionPasswordNeededError
+from telethon.tl.types import MessageMediaPhoto
 
 # Ensure logs directory exists
 os.makedirs('object_detection/logs', exist_ok=True)
 
 # Set up logging
-logging.basicConfig(filename='object_detection/logs/download_images.log', level=logging.INFO,
+logging.basicConfig(filename='object_detection/logs/object_detection.log', level=logging.INFO,
                     format='%(asctime)s %(levelname)s:%(message)s')
 
 # Load configuration
-try:
-    with open('config.yaml', 'r') as config_file:
-        config = yaml.safe_load(config_file)
-except Exception as e:
-    logging.error(f"Error loading config.yaml: {str(e)}")
-    raise e
+with open('config.yaml', 'r') as config_file:
+    config = yaml.safe_load(config_file)
 
-# Extract Telegram API credentials
-try:
-    api_id = config['telegram']['api_id']
-    api_hash = config['telegram']['api_hash']
-    phone = config['telegram']['phone']
-except KeyError as e:
-    logging.error(f"Missing key in config.yaml: {str(e)}")
-    raise KeyError(f"Missing key in config.yaml: {str(e)}")
+api_id = config['telegram']['api_id']
+api_hash = config['telegram']['api_hash']
+phone = config['telegram']['phone']
 
-# Destination directory to save downloaded images
-image_directory = "images"
+# Initialize Telegram client
+client = TelegramClient('session_name', api_id, api_hash)
 
-# List of channels to fetch images from
-telegram_channels = [
-    "https://t.me/ChemedTelegramChannel",
-    "https://t.me/lobelia4cosmetics"
-]
+async def scrape_channel(channel):
+    """
+    Scrapes images from a specified Telegram channel.
 
-# Function to download images from a Telegram channel
-def download_images_from_telegram(api_id, api_hash, channel_url):
-    client = TelegramClient('session_name', api_id, api_hash)
-    client.start()
+    Args:
+        channel (str): The Telegram channel URL.
 
-    # Fetch messages from channel
+    Returns:
+        None
+    """
     try:
-        messages = client.get_messages(channel_url, filter=InputMessagesFilterPhotos)
-
-        # Download and save images
-        for msg in messages:
-            try:
-                for photo in msg.photo:
-                    image_name = f"{msg.date.strftime('%Y-%m-%d_%H-%M-%S')}.jpg"
-                    image_path = os.path.join(image_directory, image_name)
-                    client.download_media(photo, file=image_path)
-                    logging.info(f"Downloaded {image_name} from {channel_url}")
-            except Exception as e:
-                logging.error(f"Error downloading from {channel_url}: {str(e)}")
+        await client.start(phone)
+        logging.info(f'Successfully connected to Telegram for channel: {channel}')
+        
+        # Get messages from the channel
+        messages = await client.get_messages(channel, limit=2000)  # Adjust limit as needed
+        
+        # Ensure images directory exists
+        os.makedirs('object_detection/images', exist_ok=True)
+        
+        for message in messages:
+            if message.media and isinstance(message.media, MessageMediaPhoto):
+                image_path = f'object_detection/images/{message.id}.jpg'
+                await message.download_media(image_path)
+                logging.info(f'Downloaded image {message.id}.jpg from {channel}')
+                
+        logging.info(f'Successfully scraped images for channel: {channel}')
+        
+    except SessionPasswordNeededError:
+        logging.error('Session password is needed. Please check your credentials and try again.')
     except Exception as e:
-        logging.error(f"Error fetching messages from {channel_url}: {str(e)}")
+        logging.error(f'Error scraping channel {channel}: {str(e)}')
 
-    client.disconnect()
-
-# Create the image directory if it doesn't exist
-os.makedirs(image_directory, exist_ok=True)
-
-# Download images from each channel
-for channel in telegram_channels:
-    download_images_from_telegram(api_id, api_hash, channel)
+if __name__ == '__main__':    
+    image_channels = [
+        'https://t.me/Chemed',
+        'https://t.me/lobelia4cosmetics'
+    ]
+    
+    with client:
+        # Scrape images from specific channels
+        for channel in image_channels:
+            client.loop.run_until_complete(scrape_channel(channel))
