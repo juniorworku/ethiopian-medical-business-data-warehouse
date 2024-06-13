@@ -7,7 +7,7 @@ import psycopg2
 
 # Configure logging
 os.makedirs('logs', exist_ok=True)
-logging.basicConfig(filename='logs/object_detection.log', level=logging.INFO,
+logging.basicConfig(filename='logs/object_detection_db.log', level=logging.INFO,
                     format='%(asctime)s %(levelname)s:%(message)s')
 
 # Load configuration

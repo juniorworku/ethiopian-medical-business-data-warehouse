@@ -1,0 +1,10 @@
+2024-06-13 14:10:57,104 INFO:Found 1999 images in images
+2024-06-13 14:33:24,550 INFO:Processed detection results for 1099 images
+2024-06-13 14:33:24,609 INFO:Connected to PostgreSQL database
+2024-06-13 14:33:24,612 INFO:Table detection_data is ready
+2024-06-13 14:33:24,735 INFO:Successfully inserted 1099 records into database
+2024-06-13 14:41:19,794 INFO:Found 1999 images in images
+2024-06-13 14:57:31,194 INFO:Processed detection results for 1099 images
+2024-06-13 14:57:31,272 INFO:Connected to PostgreSQL database
+2024-06-13 14:57:31,276 INFO:Table detection_data is ready
+2024-06-13 14:57:31,419 INFO:Successfully inserted 1099 records into database
