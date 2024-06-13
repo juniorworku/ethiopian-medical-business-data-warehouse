@@ -11,27 +11,27 @@ Ensure you have the necessary dependencies installed, including YOLO and its req
 1. Install OpenCV:
    ```sh
    pip install opencv-python
-   ```sh
+
 2. Install PyTorch and torchvision (for PyTorch-based YOLO):
     ```sh
     pip install torch torchvision
-    ```sh
+
 3. Install OpenCV:
     ```sh
     pip install tensorflow
-    ```sh
+
 
 ### Downloading the YOLO Model
 
 1. Clone the YOLOv5 repository::
    ```sh
-   git clone https://github.com/ultralytics/yolov5.git
+    git clone https://github.com/ultralytics/yolov5.git
     cd yolov5
-   ```sh
+
 2. Install the required dependencies::
     ```sh
     pip install -r requirements.txt
-    ```sh
+
 
 ### Preparing the Data
 1. Collect images from the Chemed Telegram Channel:Ensure you have the images saved in the object_detection/images directory.
@@ -53,11 +53,11 @@ Implement logging to track the object detection process, capture errors, and mon
 
     ```sh
     cd object_detection
-    ```sh
+
 2. Run the object detection script:
     ```sh
     python object_detection.py
-    ```sh
+    
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
