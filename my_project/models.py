@@ -1,6 +1,5 @@
-# models.py
 from sqlalchemy import Column, Integer, String, Float
-from .database import Base
+from my_project.database import Base
 
 class DetectionData(Base):
     __tablename__ = "detection_data"

@@ -1,6 +1,5 @@
-# crud.py
 from sqlalchemy.orm import Session
-from . import models, schemas
+from my_project import models, schemas
 
 def get_detection_data(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.DetectionData).offset(skip).limit(limit).all()

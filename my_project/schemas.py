@@ -1,4 +1,3 @@
-# schemas.py
 from pydantic import BaseModel
 
 class DetectionDataBase(BaseModel):
@@ -17,4 +16,4 @@ class DetectionData(DetectionDataBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True  # Updated for Pydantic V2
